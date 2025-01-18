@@ -29,7 +29,7 @@ def Home():
     """)
     
     st.write("Here's my resume:")
-    with open(r"F:/Resume/portfoilo/PuthalapattuSagarResume.docx", "rb") as file:
+    with open(r"F://Resume//portfoilo//PuthalapattuSagarResume.docx", "rb") as file:
         btn = st.download_button(
             label="Download Resume",
             data=file,
