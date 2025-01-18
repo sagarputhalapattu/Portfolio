@@ -29,11 +29,11 @@ def Home():
     """)
     
     st.write("Here's my resume:")
-    with open("assets//PuthalapattuSagarResume.pdf","rb") as file:
+    with open("Puthalapattu Sagar Resume A.pdf", "rb") as file:
         btn = st.download_button(
             label="Download Resume",
             data=file,
-            file_name="PuthalapattuSagar.pdf",
+            file_name="Puthalapattu Sagar Resume A.pdf",
             mime="application/pdf"
         )
     lottie_url = "https://lottie.host/a5c4040b-e424-4634-a7e6-660c8ce12c32/LEkIf9Zzl4.json"
