@@ -1,7 +1,9 @@
 import streamlit as st
+import os 
 from streamlit_option_menu import option_menu
 import requests 
 from streamlit_lottie import st_lottie
+
 # Setting Page Config, must remain at top
 st.set_page_config(page_title="My Portfolio ", layout="wide")
 
@@ -27,7 +29,7 @@ def Home():
     """)
     
     st.write("Here's my resume:")
-    with open("F:/Resume/portfoilo/Puthalapattu Sagar Resume A.docx", "rb") as file:
+    with open(r"F:/Resume/portfoilo/Puthalapattu Sagar Resume A.docx", "rb") as file:
         btn = st.download_button(
             label="Download Resume",
             data=file,
